@@ -1,0 +1,17 @@
+{
+  "name": "playwright-course",
+  "version": "1.0.0",
+  "description": "playwright course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:chrome" : "npx playwright test tests/example.spec.js --config=playwright.config.js --project=Chrome",
+    "test:firefox" : "npx playwright test tests/example.spec.js --config=playwright.config.js --project=Firefox",
+    "test:webkit" : "npx playwright test tests/example.spec.js --config=playwright.config.js --project=Webkit"
+  },
+  "author": "infas",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.1"
+  }
+}
